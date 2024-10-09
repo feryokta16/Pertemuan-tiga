@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --Bold: #414141;
+  --regular: #5e5b5b;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
+body {
+  font-family: poppins;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 5px 40px;
+}
+
+.logo img {
+  height: 40px;
+  margin-left: 30px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+.nav-list li {
+  margin: 0 15px;
+  font-size: 12px;
+}
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  padding: 10px 0;
+  color: var(--regular);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--regular);
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
+}
+.nav-link:target::after {
+  width: 100%;
+}
+.nav-link:hover {
+  color: pink;
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 100%;
+  background-color: #eee;
+  /* margin: 5px; */
+  color: var(--Bold);
+}
+.container .left {
+  margin-left: 60px;
+  margin-top: 60px;
+}
+.container .left h1 {
+  font-size: 50px;
+  line-height: 70px;
+  margin-top: 0;
+  padding-top: 0px;
+}
+.container .right {
+  margin-right: 80px;
+}
+.container .left p {
+  font-size: 15px;
+  width: 200px;
+}
+.container .right img {
+  height: 350px;
+  width: 550px;
+  resize: auto;
+  margin-top: 10px;
+  /* margin-right: 10px; */
+  display: block;
+}
+
+.konten {
+  display: flex;
+  position: relative;
+  height: 300px;
+  width: 80%;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  /* margin-right: 10%; */
+  padding-top: 30px;
+}
+.konten .kiri {
+  width: 40%;
+}
+.kelas {
+  height: 100px;
+}
+
+.konten .kanan p {
+  width: 300px;
+  font-size: 12px;
+}
+.konten .kanan {
+  width: 50%;
+}
+
+.konten .kiri img {
+  height: 320px;
+  width: 300px;
+  margin-left: 50%;
+  overflow: auto;
+  padding-left: 10px;
+}
+
+.kelas img {
+  height: 100px;
+  width: 100px;
+  padding-left: 10px;
+}
+
+.kelas {
+  height: 200px;
+  width: 80%;
+  background-color: white;
+  /* justify-content: space-between; */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.kelas .bungkus {
+  height: 100px;
+  width: 80%;
+  background-color: white;
+  padding-left: 200px;
+}
+
+.kelas h1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.career {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.career .career-left h1 {
+  line-height: 3;
+}
+.career .career-left {
+  margin-right: 20px;
+}
+
+.career .career-right .btn {
+  padding: 10px;
+  background-color: var(--regular);
+  border-radius: 20%;
+  color: white;
+}
+.btn-satu {
+  top: 58px;
+  left: 389px;
+  padding: 10px;
+  background-color: var(--regular);
+  border-radius: 10%;
+  color: white;
+  position: relative;
+}
+
+.career .career-right p {
+  margin-top: 10px;
+}
+#team {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 8vw;
+  padding-top: 80px;
+  margin-top: 10px;
+}
+#team .contact {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+footer {
+  border-top: 1px solid black;
+}
+footer p {
+  text-align: center;
+}
